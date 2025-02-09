@@ -79,16 +79,16 @@ img {
 }
 
 .container {
-    max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 /* General font Benefits, Team, Portfolio section */
@@ -235,29 +235,32 @@ img {
 
 /* Benefits */
 
-.benefits-item {
-    width: calc((100% - 72px) / 4);
+.benefits-subtitle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 8px;
 }
+
+.benefits-list .text-section {
+    font-weight: 500;
+}
+
+.benefits-item {}
 
 .benefits-list {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    gap: 72px;
     justify-content: center;
     align-items: flex-start;
 }
 
-.icon-benefits-item {}
-
 .icon-benefits {
-    border: 1px solid #8e8f99;
-    border-radius: 4px;
-    background-color: #f4f4fd;
-    width: 100%;
-    height: 112px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 8px;
+    display: none;
 }
 
 .visually-hidden {
@@ -746,4 +749,75 @@ img {
 .modal-btn:focus {
     border: none;
     background-color: #404bbf;
+}
+
+/* TABLET */
+
+@media screen and (min-width:768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    /* benefits */
+    .benefits-subtitle {
+        text-align: left;
+    }
+
+    .benefits-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
+
+    .benefits-item {
+        width: calc((100% - 24px) / 2);
+    }
+}
+
+
+/* DESKTOP */
+
+@media screen and (min-width:1158px) {
+    .container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    /* Benefits */
+    .benefits-subtitle {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .benefits-list .text-section {
+        font-weight: inherit;
+    }
+
+    .benefits-list {
+        gap: 24px;
+    }
+
+    .benefits-item {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .icon-benefits {
+        border: 1px solid #8e8f99;
+        border-radius: 4px;
+        background-color: #f4f4fd;
+        width: 100%;
+        height: 112px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+
 }
