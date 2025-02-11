@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <header hidden class="header">
+    <header class="header">
         <div class="container navigation">
             <nav class="nav-header">
                 <a class="logo header-logo" href="./index.html">Web<span class="logo-dark">Studio</span></a>
@@ -31,9 +31,56 @@
                 <ul class="address-link-list">
                     <li><a class="address-link-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
-                    <li><a class="address-link-item" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                    <li><a class="address-link-item" href="tel:+110001111111">+11 (000)
+                            111-11-11</a></li>
                 </ul>
             </address>
+            <button class="burger-btn" type="button" data-menu-open><svg class="burger-icon" width="24" height="24">
+                    <use href="./images/icons-new.svg#icon-burger"></use>
+                </svg></button>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu-container">
+                <button class="mobile-menu-btn-close" type="button" data-menu-close><svg class="modal-icon-close"
+                        width="8" height="8">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg></button>
+                <nav class="mobile-nav">
+                    <ul class="mobile-nav-list">
+                        <li class="mobile-nav-item"><a class="mobile-nav-link" href="./index.html">Studio</a></li>
+                        <li class="mobile-nav-item"><a class="mobile-nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="mobile-nav-item"><a class="mobile-nav-link" href="">Contacts</a></li>
+                    </ul>
+                </nav>
+                <address class="mobile-address">
+                    <ul class="mobile-address-list">
+                        <li class="mobile-address-item"><a class="mobile-address-link" href="tel:+110001111111">+11
+                                (000)
+                                111-11-11</a>
+                        </li>
+                        <li class="mobile-address-item"><a class="mobile-address-link"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    </ul>
+                </address>
+                <ul class="mobile-icon-list">
+                    <li class="icon-teams"><a class="icon-link" href=""><svg class="icon-message" width="24"
+                                height="24">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg></a></li>
+                    <li class="icon-teams"><a href="" class="icon-link"><svg class="icon-message" width="24"
+                                height="24">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg></a></li>
+                    <li class="icon-teams"><a href="" class="icon-link"><svg class="icon-message" width="24"
+                                height="24">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg></a></li>
+                    <li class="icon-teams"><a href="" class="icon-link"><svg class="icon-message" width="24"
+                                height="24">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg></a></li>
+                </ul>
+            </div>
         </div>
     </header>
     <main class="main">
@@ -412,6 +459,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
