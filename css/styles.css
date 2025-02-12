@@ -477,17 +477,15 @@ button {
 
 .footer {
     background: #2e2f42;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .footer-container {
     display: flex;
-    align-items: baseline;
-}
-
-.footer-logo-column {
-    margin-right: 120px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px;
 }
 
 .logo-light {
@@ -496,7 +494,8 @@ button {
 
 .footer-logo {
     margin-bottom: 16px;
-    display: inline-block;
+    display: block;
+    text-align: center;
 }
 
 .subtitle-footer {
@@ -505,11 +504,11 @@ button {
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .text-footer {
     color: #f4f4fd;
-    max-width: 264px;
 }
 
 .icon-footer-list {
@@ -523,13 +522,11 @@ button {
     background-color: #31D0AA;
 }
 
-.footer-form-item {
-    margin-left: auto;
-}
-
 .footer-form {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
 }
 
 .footer-input {
@@ -537,10 +534,9 @@ button {
     line-height: 2;
     letter-spacing: 0.04em;
     color: #fff;
-
     border: 1px solid #fff;
     border-radius: 4px;
-    width: 264px;
+    width: 288px;
     height: 40px;
     padding-left: 16px;
     padding-right: 16px;
@@ -966,6 +962,34 @@ button {
     /* Footer */
 
 
+    .footer-container {
+
+        justify-content: flex-start;
+        column-gap: 24px;
+        padding-left: 92px;
+        padding-right: 92px;
+        /* align-items: baseline; */
+    }
+
+    .footer-logo {
+        text-align: left;
+    }
+
+    .subtitle-footer {
+        text-align: left;
+    }
+
+    .text-footer {
+        max-width: 264px;
+    }
+
+    .footer-form {
+        gap: 24px;
+    }
+
+    .footer-input {
+        width: 264px;
+    }
 
 }
 
@@ -1080,7 +1104,27 @@ button {
 
     /* Footer */
 
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 
+    .footer-container {
+        gap: 0;
+        align-items: baseline;
+    }
+
+    .footer-logo-column {
+        margin-right: 120px;
+    }
+
+    .footer-logo {
+        display: inline-block;
+    }
+
+    .footer-form-item {
+        margin-left: auto;
+    }
 
 
 }
