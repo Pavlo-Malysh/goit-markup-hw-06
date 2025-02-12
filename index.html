@@ -36,7 +36,7 @@
                 </ul>
             </address>
             <button class="burger-btn" type="button" data-menu-open><svg class="burger-icon" width="24" height="24">
-                    <use href="./images/icons-new.svg#icon-burger"></use>
+                    <use href="./images/icons.svg#icon-burger"></use>
                 </svg></button>
         </div>
         <div class="mobile-menu" data-menu>
@@ -154,7 +154,8 @@
                 <h2 class="title-section">Our team</h2>
                 <ul class="list-teams">
                     <li class="card-teams">
-                        <img src="./images/teams/mark.jpg" alt="Mark Guerrero" width="264" height="260">
+                        <img srcset="./images/teams/mark-1-min.jpg 1x, ./images/teams/mark-1@2x-min.jpg 2x,"
+                            src="./images/teams/mark-1-min.jpg" alt="Mark Guerrero" width="264" height="260">
                         <div class="card-text-container">
                             <h3 class="subtitle">Mark Guerrero</h3>
                             <p class="text-section">Product Designer</p>
@@ -179,7 +180,8 @@
                         </div>
                     </li>
                     <li class="card-teams">
-                        <img src="./images/teams/tom.jpg" alt="Tom Ford" width="264" height="260">
+                        <img srcset="./images/teams/tom-1-min.jpg 1x, ./images/teams/tom-1@2x-min.jpg 2x,"
+                            src="./images/teams/tom-1-min.jpg" alt="Tom Ford" width="264" height="260">
                         <div class="card-text-container">
                             <h3 class="subtitle">Tom Ford</h3>
                             <p class="text-section">Frontend Developer</p>
@@ -204,7 +206,8 @@
                         </div>
                     </li>
                     <li class="card-teams">
-                        <img src="./images/teams/camila.jpg" alt="Camila Garcia" width="264" height="260">
+                        <img srcset="./images/teams/camila-1-min.jpg 1x, ./images/teams/camila-1@2x-min.jpg 2x,"
+                            src="./images/teams/camila-1-min.jpg" alt="Camila Garcia" width="264" height="260">
                         <div class="card-text-container">
                             <h3 class="subtitle">Camila Garcia</h3>
                             <p class="text-section">Marketing</p>
@@ -229,7 +232,8 @@
                         </div>
                     </li>
                     <li class="card-teams">
-                        <img src="./images/teams/daniel.jpg" alt="Daniel Wilson" width="264" height="260">
+                        <img srcset="./images/teams/daniel-1-min.jpg 1x, ./images/teams/daniel-1@2x-min.jpg 2x,"
+                            src="./images/teams/daniel-1-min.jpg" alt="Daniel Wilson" width="264" height="260">
                         <div class="card-text-container">
                             <h3 class="subtitle">Daniel Wilson</h3>
                             <p class="text-section">UI Designer</p>
@@ -264,7 +268,16 @@
                 <ul class="list-portfolio">
                     <li class="card-portfolio">
                         <div class="card-overlay">
-                            <img src="./images/portfolio/bank-app.jpg" alt="bank-app" width="360" height="300">
+                            <picture>
+                                <source media="(min-width:1158px)"
+                                    srcset="./images/portfolio/portfolio-desk-1-min.jpg 1x, ./images/portfolio/portfolio-desk-1@2x-min.jpg 2x">
+                                <source media="(min-width:768px )"
+                                    srcset="./images/portfolio/portfolio-tab-1-min.jpg 1x, ./images/portfolio/portfolio-tab-1@2x-min.jpg 2x">
+                                <source media="(max-width:767px )"
+                                    srcset="./images/portfolio/portfolio-mob-1-min.jpg 1x, ./images/portfolio/portfolio-mob-1@2x-min.jpg 2x">
+                                <img src="./images/portfolio/portfolio-desk-1-min.jpg" alt="bank-app" width="360"
+                                    height="300">
+                            </picture>
                             <p class="text-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App
                                 ·
@@ -278,8 +291,16 @@
                     </li>
                     <li class="card-portfolio">
                         <div class="card-overlay">
-                            <img src="./images/portfolio/cashless-payment.jpg" alt="cashless-payment" width="360"
-                                height="300">
+                            <picture>
+                                <source media="(min-width:1158px)"
+                                    srcset="./images/portfolio/portfolio-desk-2-min.jpg 1x, ./images/portfolio/portfolio-desk-2@2x-min.jpg 2x">
+                                <source media="(min-width:768px )"
+                                    srcset="./images/portfolio/portfolio-tab-2-min.jpg 1x, ./images/portfolio/portfolio-tab-2@2x-min.jpg 2x">
+                                <source media="(max-width:767px )"
+                                    srcset="./images/portfolio/portfolio-mob-2-min.jpg 1x, ./images/portfolio/portfolio-mob-2@2x-min.jpg 2x">
+                                <img src="./images/portfolio/portfolio-desk-2-min.jpg" alt="cashless-payment"
+                                    width="360" height="300">
+                            </picture>
                             <p class="text-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App
                                 ·
@@ -293,8 +314,16 @@
                     </li>
                     <li class="card-portfolio">
                         <div class="card-overlay">
-                            <img src="./images/portfolio/maditation-app.jpg" alt="maditation-app" width="360"
-                                height="300">
+                            <picture>
+                                <source media="(min-width:1158px)"
+                                    srcset="./images/portfolio/portfolio-desk-3-min.jpg 1x, ./images/portfolio/portfolio-desk-3@2x-min.jpg 2x">
+                                <source media="(min-width:768px )"
+                                    srcset="./images/portfolio/portfolio-tab-3-min.jpg 1x, ./images/portfolio/portfolio-tab-3@2x-min.jpg 2x">
+                                <source media="(max-width:767px )"
+                                    srcset="./images/portfolio/portfolio-mob-3-min.jpg 1x, ./images/portfolio/portfolio-mob-3@2x-min.jpg 2x">
+                                <img src="./images/portfolio/portfolio-desk-3-min.jpg" alt="maditation-app" width="360"
+                                    height="300">
+                            </picture>
                             <p class="text-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App
                                 ·
@@ -308,7 +337,16 @@
                     </li>
                     <li class="card-portfolio">
                         <div class="card-overlay">
-                            <img src="./images/portfolio/taxi-service.jpg" alt="taxi-service" width="360" height="300">
+                            <picture>
+                                <source media="(min-width:1158px)"
+                                    srcset="./images/portfolio/portfolio-desk-4-min.jpg 1x, ./images/portfolio/portfolio-desk-4@2x-min.jpg 2x">
+                                <source media="(min-width:768px )"
+                                    srcset="./images/portfolio/portfolio-tab-4-min.jpg 1x, ./images/portfolio/portfolio-tab-4@2x-min.jpg 2x">
+                                <source media="(max-width:767px )"
+                                    srcset="./images/portfolio/portfolio-mob-4-min.jpg 1x, ./images/portfolio/portfolio-mob-4@2x-min.jpg 2x">
+                                <img src="./images/portfolio/portfolio-desk-4-min.jpg" alt="taxi-service" width="360"
+                                    height="300">
+                            </picture>
                             <p class="text-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App
                                 ·
@@ -322,8 +360,16 @@
                     </li>
                     <li class="card-portfolio">
                         <div class="card-overlay">
-                            <img src="./images/portfolio/screen-illustration.jpg" alt="Illustrations-screen" width="360"
-                                height="300">
+                            <picture>
+                                <source media="(min-width:1158px)"
+                                    srcset="./images/portfolio/portfolio-desk-5-min.jpg 1x, ./images/portfolio/portfolio-desk-5@2x-min.jpg 2x">
+                                <source media="(min-width:768px )"
+                                    srcset="./images/portfolio/portfolio-tab-5-min.jpg 1x, ./images/portfolio/portfolio-tab-5@2x-min.jpg 2x">
+                                <source media="(max-width:767px )"
+                                    srcset="./images/portfolio/portfolio-mob-5-min.jpg 1x, ./images/portfolio/portfolio-mob-5@2x-min.jpg 2x">
+                                <img src="./images/portfolio/portfolio-desk-5-min.jpg" alt="Illustrations-screen"
+                                    width="360" height="300">
+                            </picture>
                             <p class="text-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App
                                 ·
@@ -337,7 +383,16 @@
                     </li>
                     <li class="card-portfolio">
                         <div class="card-overlay">
-                            <img src="./images/portfolio/online-courses.jpg" alt="Marketing" width="360" height="300">
+                            <picture>
+                                <source media="(min-width:1158px)"
+                                    srcset="./images/portfolio/portfolio-desk-6-min.jpg 1x, ./images/portfolio/portfolio-desk-6@2x-min.jpg 2x">
+                                <source media="(min-width:768px )"
+                                    srcset="./images/portfolio/portfolio-tab-6-min.jpg 1x, ./images/portfolio/portfolio-tab-6@2x-min.jpg 2x">
+                                <source media="(max-width:767px )"
+                                    srcset="./images/portfolio/portfolio-mob-6-min.jpg 1x, ./images/portfolio/portfolio-mob-6@2x-min.jpg 2x">
+                                <img src="./images/portfolio/portfolio-desk-6-min.jpg" alt="Marketing" width="360"
+                                    height="300">
+                            </picture>
                             <p class="text-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App
                                 ·
